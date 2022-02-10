@@ -46,7 +46,7 @@ class CreateProduct extends Command
         $attributes['description'] = $this->ask('Enter product description: ');
         $attributes['price'] = $this->ask('Enter product price: ');
         $attributes['category_id'] = $this->ask('Enter category ID of the product: ');
-        $attributes['image_url'] = $this->ask('Enter the absolute path of the product image: ');
+        $attributes['image'] = $this->ask('Enter the absolute path of the product image: ');
 
         $validator = Validator::make($attributes, ProductValidationRules::RULES);
 
